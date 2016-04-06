@@ -1,0 +1,10 @@
+<p><a href="/index"><< Main Index</a></p>
+<h1>Researchers Index</h1>
+
+<ol>
+  <% @researchers.each do |researcher| %>
+    <li><a href="/researchers/<%= researcher.id %>"><%= researcher.name %></a></li>
+  <% end %>
+</ol>
+
+<p><a href="/researchers/new">New Researcher</a></p>
